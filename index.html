@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <p class="title">Todo List</p>
+        <div class="inputs">
+            <input type="text" placeholder="Todo Name" class="js-todo" required>
+            <input type="date" name="date" class="js-todo-date">
+        </div>
+        <button class="addBtn" type="submit">Add</button>
+        <div class="js-todo-list"></div>
+        <div class="js-unre">
+            <button class="undoBtn" ><img src="./assets/undo_FILL0_wght400_GRAD0_opsz24.svg" alt="undo"></button>
+            <!-- <button class="undoBtn"><img src="./assets/redo_FILL0_wght400_GRAD0_opsz24.svg" alt="redo"></button> -->
+        </div>
+    </div>
+    <script src="script.js" charset="UTF-8"></script>
+</body>
+</html>

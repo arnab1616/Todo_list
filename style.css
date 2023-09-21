@@ -1,0 +1,102 @@
+body{
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+}
+.container{
+    background: rgb(223, 232, 233);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    border-radius: 20px;
+}
+.title{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: rgb(86, 85, 85);
+}
+.inputs input{
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    margin: 0px 5px;
+}
+.inputs input:focus{
+    background: whitesmoke;
+    /* border: none; */
+}
+.addBtn{
+    padding: 8px 15px;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: none;
+    background: green;
+    color: white;
+    box-shadow: -0.5px 1px 4px 1px rgb(159, 158, 158);
+    cursor: pointer;
+    
+}
+.addBtn:hover{
+    background: rgb(1, 136, 1);
+}
+.js-todo-list{
+    padding: 5px;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 160px 120px 100px;
+    row-gap: 12px;
+    align-items: center;
+    /* grid-template-rows: 100px; */
+}
+.deleteBtn{
+    background: rgba(189, 6, 6, 0.862); 
+    padding: 5px 0px;
+    border:none;
+    border-radius: 8px;
+    color:white;
+    box-shadow: -0.5px 1px 4px 1px rgb(159, 158, 158);
+    cursor:pointer;
+}
+.deleteBtn:hover{
+    background: rgba(162, 39, 39, 0.862); 
+}
+.js-unre .undoBtn{
+    margin: 5px;
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: rgb(155, 189, 200);
+    box-shadow: -0.5px 0.5px 4px 1px rgb(197, 197, 197);
+}
+.js-unre .undoBtn:hover{
+    background: rgb(135, 181, 197);
+}
+.disableMode{
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 50%;
+    box-shadow: none;
+    background: rgb(197, 197, 197);
+}
+@media (min-width:318px) and (max-width:550px){
+    .container{
+        width: 100%;
+        height: 100%;
+    }
+    .inputs{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+    .inputs input{
+        margin: 5px 0px;
+        padding: 10px;
+    }
+
+}
